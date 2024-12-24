@@ -1,0 +1,64 @@
+/* General styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Default font-family for the body */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 60%;
+    /* Main content area width set to 60% of the viewport */
+    margin: 0 auto;
+    /* Centers the main content area */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 3rem;
+    /* Font size for h1 */
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h1+h2 {
+    margin-top: 10px;
+    /* Adds margin-top to h2 when it follows h1 */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    /* Uses Roboto font for headings */
+    font-weight: 100;
+    /* Light font weight for headings */
+}
+
+/* Paragraph styling */
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 20px;
+    color: #333;
+    /* Text color */
+}
+
+/* Font Styles for Google Fonts */
+/* 
+To add a Google Font to your project:
+1. Visit Google Fonts (https://fonts.google.com/).
+2. Choose the desired font-family.
+3. Select the styles and weights you need, then add them to your collection.
+4. Copy the provided link and paste it in the <head> section of your HTML file:
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+5. In your CSS, use the font-family property to apply the Google Font, e.g., font-family: 'Roboto', sans-serif;
+*/

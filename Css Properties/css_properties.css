@@ -1,0 +1,25 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(253, 253, 253, 0.7);
+}
+
+/* rgba - (Red, Green, Blue, Alpha) Channels
+   Alpha controls transparency: 1 (opaque) to 0 (transparent) */
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+}
+
+/* opacity - Makes the whole element semi-transparent
+   Value range: 1 (opaque) to 0 (completely transparent)
+   Affects the entire element including its content */

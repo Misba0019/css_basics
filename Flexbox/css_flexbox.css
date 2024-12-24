@@ -1,0 +1,99 @@
+/* General styling */
+body {
+    font-family: Raleway, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+/* Flexbox container */
+#container {
+    width: 90%;
+    margin: 0 auto;
+    /* Center the container */
+    background-color: rgb(4, 61, 142);
+    border: 5px solid rgb(11, 11, 11);
+    display: flex;
+    /* Establishes a flex container */
+    flex-direction: row;
+    /* Sets the main axis direction */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    /* flex-wrap: wrap; /* Uncomment to allow wrapping */
+}
+
+/* flex-wrap: --
+Make flexible items wrap, if necessary.
+Sets whether flex items are forced onto one line or can wrap onto multiple lines.
+    wrap; -- Items will wrap onto multiple lines.
+    wrap-reverse; -- Wraps items onto multiple lines in reverse order.
+    nowrap; -- Forces items to stay on one line. */
+
+/* flex-direction: --
+Defines the direction of the main axis.
+    row; -- Default, items are laid out horizontally.
+    row-reverse; -- Items are laid out horizontally in reverse order.
+    column; -- Items are laid out vertically.
+    column-reverse; -- Items are laid out vertically in reverse order. */
+
+/* justify-content: --
+Defines alignment along the main axis.
+    flex-start; -- Items align to the start.
+    flex-end; -- Items align to the end.
+    center; -- Items align to the center.
+    space-between; -- Items are evenly distributed with equal space between them.
+    space-around; -- Items are evenly distributed with space around them.
+    space-evenly; -- Items are evenly distributed with equal space around them. */
+
+/* align-items: --
+Controls alignment of items along the cross axis.
+    flex-start; -- Aligns items to the start of the cross axis.
+    flex-end; -- Aligns items to the end of the cross axis.
+    center; -- Aligns items to the center of the cross axis.
+    baseline; -- Aligns items along their baseline.
+    stretch; -- Stretches items to fill the container. */
+
+/* align-content: --
+Aligns the flex lines when there are multiple lines.
+    flex-start; -- Lines are packed toward the start.
+    center; -- Lines are packed toward the center.
+    flex-end; -- Lines are packed toward the end.
+    space-between; -- Lines are evenly distributed with equal space between them.
+    space-around; -- Lines are evenly distributed with space around them.
+    stretch; -- Lines stretch to take up the remaining space. */
+
+/* Flexbox item styles */
+#container div {
+    width: 100px;
+    height: 100px;
+    flex-basis: 100px;
+    /* Initial size before flex-grow or flex-shrink */
+}
+
+/* Individual flex item adjustments */
+div:nth-of-type(1) {
+    flex-grow: 1;
+    /* Item will grow */
+    flex-shrink: 2;
+    /* Item can shrink */
+}
+
+div:nth-of-type(5) {
+    flex-grow: 2;
+    /* Item will grow more */
+    flex-shrink: 0;
+    /* Item won't shrink */
+}
+
+/* align-self: --
+Aligns individual item differently from others.
+    auto; -- Inherits from parent container.
+    flex-start; -- Aligns item to the start of the cross axis.
+    flex-end; -- Aligns item to the end of the cross axis.
+    center; -- Aligns item to the center of the cross axis.
+    baseline; -- Aligns item along its baseline.
+    stretch; -- Stretches item to fill the container. */

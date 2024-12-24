@@ -1,0 +1,28 @@
+/* General body styling */
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(3, 33, 42);
+}
+
+/* Button styling */
+button {
+    background: none;
+    color: rgb(104, 210, 232);
+    font-size: 1em;
+    border: 2px solid;
+    padding: 1em 1.5em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s linear;
+}
+/* Transition Property - transition: all 0.25s; combines multiple transitions */
+
+button:hover {
+    border-color: rgb(99, 243, 156);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(99, 243, 156);
+    transform: translateY(-0.25em);
+}
+/* box-shadow - offset-X | offset-Y | blur-radius | spread-radius */

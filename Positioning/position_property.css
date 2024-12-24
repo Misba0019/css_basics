@@ -1,0 +1,67 @@
+/* General styling for all divs */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(77, 134, 156);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Middle div common styling */
+#middle {
+    background-color: rgb(125, 198, 189);
+}
+
+/* Static position */
+#static #middle {
+    position: static;
+    top: 100px;
+    /* This will have no effect since position: static is the default */
+}
+
+/* Static value - The default position; elements are positioned according to the normal document flow. */
+
+/* Relative position */
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/* Relative value - Elements are positioned relative to their normal position. */
+
+/* Absolute position with relative container */
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+/* Absolute value - Elements are positioned relative to their nearest positioned ancestor. */
+
+/* Fixed position */
+#fixed #middle {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Fixed value - Elements are positioned relative to the browser window and do not move when scrolled. */
+
+/* Sticky position */
+#sticky {
+    height: 20%;
+}
+
+#sticky #middle {
+    position: sticky;
+    top: 20px;
+    right: 20px;
+}
+
+/* Sticky value - Elements are treated as relative until they are scrolled, then they become fixed. */

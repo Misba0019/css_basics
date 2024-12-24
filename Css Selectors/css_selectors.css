@@ -1,0 +1,163 @@
+/* ---------------------- The Cascade --------------------------- 
+The Order your styles are declared in and linked to matters!
+Example:
+h1 {
+    color: red;
+}
+h1 {
+    color: blue;
+}
+Blue wins!
+*/
+
+/* ---------------------- Specificity ---------------------------
+Specificity determines which rules apply when multiple rules could apply to the same element.
+More specific selectors "Win!"
+*/
+
+/* 
+* {
+    background-color: cyan;
+}
+Universal Selector - Selects every element on the page.
+*/
+
+h1 {
+    color: rgb(6, 23, 80);
+}
+
+h1 {
+    color: rgb(55, 66, 138);
+}
+
+/* Specificity - The last h1 rule wins! */
+
+h2 {
+    color: rgb(18, 18, 86);
+}
+
+body {
+    background-color: skyblue;
+}
+
+button {
+    background-color: lightcyan;
+    color: rgb(7, 27, 60);
+    font-size: 15px;
+}
+
+span {
+    color: rgb(50, 111, 91);
+}
+
+input[type="password"] {
+    color: skyblue;
+}
+
+/* Attribute Selector - Styles elements based on their attributes. */
+
+section[class="post"] {
+    text-decoration: underline dashed rgb(168, 190, 220);
+}
+
+/* Attribute Selector - Another example. */
+
+#login {
+    background-color: rgb(3, 3, 148);
+    color: beige;
+}
+
+/* ID Selector - Styles a specific element based on its ID. */
+
+.tag {
+    color: rgb(142, 157, 183);
+    background-color: rgb(70, 40, 114);
+    font-size: 15px;
+}
+
+/* Class Selector - Styles a group of elements sharing a class. */
+
+.post a {
+    text-decoration: none;
+    background-color: rgb(77, 150, 240);
+    color: rgb(150, 200, 249);
+}
+
+/* Descendant Selector - Styles nested elements. */
+
+footer a {
+    color: rgb(25, 48, 87);
+    text-decoration: none;
+}
+
+/* Descendant Selector - More specific targeting within a parent element. */
+
+footer>a {
+    color: rgb(174, 8, 8);
+    text-decoration: dashed underline white;
+}
+
+/* Direct Child Selector - Styles only direct child elements of a parent. */
+
+/* --------------------------- Pseudo Classes --------------------------- */
+
+.post button:hover {
+    background-color: rgb(7, 27, 60);
+    color: rgb(150, 200, 255);
+}
+
+/* Pseudo Class - Modifies elements when hovered over. */
+
+.post button:active {
+    color: rgb(70, 40, 123);
+}
+
+/* Pseudo Class - Modifies elements when active (clicked). */
+
+.post:nth-of-type(2) {
+    background-color: rgb(177, 216, 206);
+}
+
+/* Pseudo Class - Styles the second element of its type. */
+
+.post:nth-of-type(3n) {
+    background-color: rgb(180, 210, 221);
+}
+
+/* Pseudo Class - Styles every third element of its type. */
+
+/* ------------------------ Pseudo Elements -------------------------- */
+
+.post h2::first-letter {
+    color: rgb(221, 230, 235);
+    font-size: 40px;
+}
+
+/* Pseudo Element - Styles the first letter of the selected element. */
+
+p::first-line {
+    font-weight: bold;
+}
+
+/* Pseudo Element - Styles the first line of the paragraph. */
+
+p::selection {
+    background-color: rgb(147, 19, 70);
+}
+
+/* Pseudo Element - Styles the selected text. */
+
+/* 
+h1, h2 {
+    font-size: 30px;
+    color: rgb(77, 45, 79);
+}
+Selector List - Applies styles to multiple elements.
+*/
+
+/* 
+h1 + .post {
+    background-color: blueviolet;
+}
+Adjacent Selector - Styles the immediate sibling element.
+*/
