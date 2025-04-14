@@ -30,4 +30,4 @@ Dive into typography and learn how to style text with different fonts. This sect
 Finish with CSS transitions to add smooth animations and effects to your elements. This section provides examples of how to use CSS transitions to create engaging and dynamic web pages.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
